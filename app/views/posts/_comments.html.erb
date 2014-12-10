@@ -1,0 +1,14 @@
+<<ul>
+<% commentable.comments.each do |comments| %>
+	<li>
+		<div>
+			<%= comment.title %>	
+		</div>
+		<div>
+			<%= comment.message %>	
+		</div>
+	</li>
+<%= end %>
+</ul>
+
+<%= render 'comments/form' %>
